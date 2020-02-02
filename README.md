@@ -1,7 +1,7 @@
 # Blackjack
 
-##Usage
+## Usage
 Open index.html to play the game
 
-##Notes
+## Notes
 Saving/viewing scores is not working because of server connectivity.
