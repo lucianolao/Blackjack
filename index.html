@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>Blackjack</title>
+    <meta charset="UTF-8" >
+    <meta name="description" content="Blackjack" >
+    <meta name="keywords" content="HTML,CSS, BlackJack, blackjack game, card games, online games, best card game, PHP" >
+    <meta name="author" content="Luciano oliveira, Anmolpreet Sandhu, Rushabh Raval" >
+    
+<style>
+	body{
+		background-image:url(images/background.jpg);
+		background-size:cover;
+		background-position:top center;
+		background-repeat:no-repeat;
+		
+	}
+	.txtarea{
+		border:2px solid #456879;
+		border-radius:10px;
+		height:22px;
+		width:150px;
+		background-color:#FC0;
+	}
+</style>
+</head>
+<body>
+<script>
+	function login()
+	{
+		var username = document.getElementById("username").value;
+		if (username == '') {
+			alert("Enter an username");
+			return;
+		}
+		sessionStorage.myValue = username;
+		window.open("blackjack.html",'_self',false);
+	}
+</script>
+<center><img src="images/logo.png"/>
+<p>&nbsp;</p>
+
+<p><font color="#FF9900">Username: </font>
+  <input type="text" id="username" name="username" class="txtarea" size="20">
+</p>
+<input type="image" onClick="login();" src="images/buttonEnter.png">
+
+</center>
+</body>
+</html>

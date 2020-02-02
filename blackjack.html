@@ -1,0 +1,60 @@
+<html>
+	
+	<!-- Luciano Oliveira
+		Anmolpreet Sadhu
+		Rushabh Raval
+	-->
+	
+<head>
+    <title>Blackjack></title>
+    <meta charset="UTF-8" >
+    <meta name="description" content="Blackjack" >
+    <meta name="keywords" content="HTML,CSS, BlackJack, blackjack game, card games, online games, best card game, login, PHP" >
+    <meta name="author" content="Luciano oliveira, Rushabh Raval, Anmolpreet Sandhu" >
+
+
+	<link href="blackjack.css" type="text/css" rel="stylesheet">
+
+	<script type="text/javascript" src="blackjack.js"></script>
+	
+
+</head>
+<body onload ="reset()">
+<script src ="jquery-2.1.1.js"></script>
+<div class="mainFont">
+	<span id="imgCenter"><img src="images/logo.png"/></span>
+	</div>
+	
+	<p><span class="mainFont">Cash:
+
+	<input type="text" class="txtarea" id="cash" size="5" value="1500" disabled>
+	Bet: <input type="text" class="txtarea" id="bet" size="5" value="" disabled>
+	  
+	<input type="image" class="sameButton" src="images/buttonDeal.png" id="deal" onClick="deal();">
+	<input type="image" class="restart" src="images/buttonRestart.png" id="restart" onClick="restartGame();">
+	<input type="image" class="score" src="images/buttonScore.png" id="score" onClick="loadScore();">
+	</span></p>
+	<p><span class="mainFont"><br/>
+	<input type="image" src="images/1.png" id="1" value="1" onClick="makeBet(1);">
+	<input type="image" src="images/5.png" id="5" value="5" onClick="makeBet(5);">
+	<input type="image" src="images/25.png" id="25" value="25" onClick="makeBet(25);">
+	<input type="image" src="images/100.png" id="100" value="100" onClick="makeBet(100);">
+	<input type="image" src="images/500.png" id="500" value="500" onClick="makeBet(500);">
+	<input type="image" src="images/1000.png" id="1000" value="1000" onClick="makeBet(1000);">
+	<br/>
+    <span id="result"></span>
+	<input type="image" class="sameButton" src="images/buttonHit.png" id="hit" onClick="hit(humanPlayer,false);">
+	<input type="image" class="stand" src="images/buttonStand.png" id="stand" onClick="stand();" >
+	  
+	</span></p>
+	<span class="mainFont">
+	<center>
+	Dealer: <span id="AIPoints"></span> <p id="AIPlayer"></p>
+	<span class="player">
+	<script>document.write(username+": ");</script><span id="humanPoints"></span> <p id="humanPlayer"></p>
+	</span>
+	</center>
+	</span>
+</body>
+</html>
+	
